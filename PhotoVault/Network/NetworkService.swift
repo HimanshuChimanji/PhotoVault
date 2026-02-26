@@ -33,7 +33,7 @@ open class NetworkService<T: Decodable>: NetworkServiceProtocol {
         self.baseURL = baseURL
     }
     
-    public func execute(completion: @escaping @Sendable (Result<T?, NetworkError>) -> ()) {
+    public func execute(completion: @escaping  (Result<T?, NetworkError>) -> ()) {
         // Construct full URL
         
         guard baseURL != "" else {
@@ -110,7 +110,7 @@ open class NetworkService<T: Decodable>: NetworkServiceProtocol {
                    let jsonData = try? JSONSerialization.data(withJSONObject: jsonObject, options: .prettyPrinted),
                    let jsonString = String(data: jsonData, encoding: .utf8) {
                     logToFile("\n********Response*********\n DataOperation")
-                    logToFile(jsonString)
+//                    logToFile(jsonString)
                 } else {
                     logToFile("Failed to parse JSON")
                 }

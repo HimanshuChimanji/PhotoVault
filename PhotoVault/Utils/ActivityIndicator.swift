@@ -24,7 +24,7 @@ extension UIViewController {
         DispatchQueue.main.async {
             customView.frame = CGRect(x: 0, y: 0, width: screenWidth, height: screenHeight)
             activityIndicator.frame=CGRect(x: 0, y: 0, width: 60, height: 60)
-            activityIndicator.colors=[UIColor.brown]
+            activityIndicator.colors=[UIColor.blue]
             
             activityIndicator.center = self.view.center
             self.view.isUserInteractionEnabled = false

@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+class ApiConfig {
+    
+    public static let BASEURL                               = "https://jsonplaceholder.typicode.com/" // Development instractions
+    public static let Photos                                 = "photos"
+
+}
+
+

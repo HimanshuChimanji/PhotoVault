@@ -57,7 +57,7 @@ class PhotoListDetailVC: UIViewController {
             self.showAlert(title: "Error", message: "Something went wrong")
             return
         }
-        
+        self.showActivityIndicator()
         viewModel.editPhoto(photo: photo, newTitle: title)
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
@@ -65,7 +65,7 @@ class PhotoListDetailVC: UIViewController {
                 self.navigationController?.popViewController(animated: true)
             }
             
-            
+            self.hideActivityIndicator()
             self.showAlert(title: "Success", message: "Photo Title updated successfully",actions: [okAction])
         }
         

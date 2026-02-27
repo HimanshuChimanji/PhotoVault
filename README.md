@@ -63,38 +63,38 @@ CoreData
 
 🚀 Features
 
-Fetch & Display
-    Data fetched using URLSession
-    Displayed in UITableView
-    Custom XIB-based cell
-    Loading indicator during fetch
-Pagination
-    Batch loading (30 records)
-    Lazy loading on scroll
-    Optimized memory usage
-Image Loading
-    Implemented using SDWebImage
-    In-memory caching
-    Placeholder image support
-    Graceful handling of DNS failures for image host
+    Fetch & Display
+        Data fetched using URLSession
+        Displayed in UITableView
+        Custom XIB-based cell
+        Loading indicator during fetch
+    Pagination
+        Batch loading (30 records)
+        Lazy loading on scroll
+        Optimized memory usage
+    Image Loading
+        Implemented using SDWebImage
+        In-memory caching
+        Placeholder image support
+        Graceful handling of DNS failures for image host
     
     Note: The image URLs provided by the API use the host via.placeholder.com, which is currently not resolving (DNS failure) in certain regions/networks. This is an external service issue and not related to the app’s networking implementation. Image loading failures are handled gracefully using SDWebImage with fallback placeholder images to ensure a stable user experience.
 
-Core Data
-    Saves API data locally
-    Loads from Core Data on subsequent launches
-    Duplicate prevention using unique id
-    Full CRUD operations supported
-Edit Title
-    Tap a row to open detail screen
-    Editable title field
-    Changes saved to Core Data
-    UI updates immediately
-Delete Record
-    Swipe-to-delete in list screen
-    Confirmation alert before deletion
-    Immediate Core Data and UI update
-    No delete button on detail screen
+    Core Data
+        Saves API data locally
+        Loads from Core Data on subsequent launches
+        Duplicate prevention using unique id
+        Full CRUD operations supported
+    Edit Title
+        Tap a row to open detail screen
+        Editable title field
+        Changes saved to Core Data
+        UI updates immediately
+    Delete Record
+        Swipe-to-delete in list screen
+        Confirmation alert before deletion
+        Immediate Core Data and UI update
+        No delete button on detail screen
     
 
 ⚡ Performance Optimizations

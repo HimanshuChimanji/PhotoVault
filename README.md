@@ -1,5 +1,6 @@
 📸 PhotoVault
-iOS Engineer Technical Assessment
+    
+    iOS Engineer Technical Assessment
 
     Candidate: Himanshu Chimanji
     Platform: iOS 15+
@@ -41,7 +42,7 @@ Each photo includes:
 
 PhotoVault follows the MVVM pattern with clear separation of concerns.
 
-Project Structure
+    Project Structure
 
     Network Layer
         NetworkServiceProtocol
@@ -53,13 +54,13 @@ Project Structure
         PhotoListDetail
             View
             ViewModal
-    PhotoList
-        Model
-        Network
-        View
-        ViewModel
-Utils
-CoreData
+        PhotoList
+            Model
+            Network
+            View
+            ViewModel
+    Utils
+    CoreData
 
 
 🚀 Features

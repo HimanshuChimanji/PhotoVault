@@ -1,14 +1,14 @@
 📸 PhotoVault
 iOS Engineer Technical Assessment
 
-Candidate: Himanshu Chimanji
-Platform: iOS 15+
-Language: Swift 5
-Architecture: MVVM
-UI Framework: UIKit (XIB-based)
-Networking: URLSession (Custom Network Layer)
-Persistence: Core Data
-Image Loading: SDWebImage
+    Candidate: Himanshu Chimanji
+    Platform: iOS 15+
+    Language: Swift 5
+    Architecture: MVVM
+    UI Framework: UIKit (XIB-based)
+    Networking: URLSession (Custom Network Layer)
+    Persistence: Core Data
+    Image Loading: SDWebImage
 
 
 📌 Overview
@@ -130,5 +130,6 @@ CoreData
 
 🔎 Image Host Note
 
-    The image URLs returned by the API use the host via.placeholder.com, which is currently not resolving (DNS failure) on certain networks/regions. This is an external service issue and not related to the app’s networking implementation.
+    The image URLs returned by the API use the host via.placeholder.com, which is currently not resolving (DNS failure) on certain networks/regions. 
+    This is an external service issue and not related to the app’s networking implementation.
     Image loading failures are handled gracefully using SDWebImage with fallback placeholder images to maintain UI stability.

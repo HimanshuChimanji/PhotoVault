@@ -131,6 +131,6 @@ PhotoVault follows the MVVM pattern with clear separation of concerns.
 
 🔎 Image Host Note
 
-    The image URLs returned by the API use the host via.placeholder.com, which is currently not resolving (DNS failure) on certain networks/regions. 
-    This is an external service issue and not related to the app’s networking implementation.
-    Image loading failures are handled gracefully using SDWebImage with fallback placeholder images to maintain UI stability.
+The image URLs returned by the API use the host via.placeholder.com, which is currently not resolving (DNS failure) on certain networks/regions. This is an external service issue and not related to the app’s networking implementation.
+
+Image loading failures are handled gracefully using SDWebImage with fallback placeholder images to maintain UI stability.

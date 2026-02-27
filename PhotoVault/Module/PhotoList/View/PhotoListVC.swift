@@ -134,4 +134,11 @@ extension PhotoListVC: UITableViewDataSource, UITableViewDelegate {
         
         return UISwipeActionsConfiguration(actions: [deleteAction])
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let photo = viewModel.allPhotos[indexPath.row]
+        let vc = PhotoListDetailVC(nibName: "PhotoListDetailVC", bundle: nil)
+        vc.photo = photo
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }

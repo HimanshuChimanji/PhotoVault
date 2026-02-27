@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+class PhotoListDetailViewModal {
+    
+    func editPhoto(photo: Photo, newTitle: String) {
+        CoreDataHelper.shared.updatePhotoTitle(photo: photo, newTitle: newTitle)
+    }
+    
+}

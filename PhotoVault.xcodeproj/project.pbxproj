@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7FBD212C2F51615C00BF7141 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBD212B2F51615C00BF7141 /* Extension.swift */; };
 		7FBE05F42F501CEE00CE6906 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBE05E82F501CEE00CE6906 /* AppDelegate.swift */; };
 		7FBE05F52F501CEE00CE6906 /* PhotoVault.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7FBE05EF2F501CEE00CE6906 /* PhotoVault.xcdatamodeld */; };
 		7FBE05F62F501CEE00CE6906 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBE05F02F501CEE00CE6906 /* SceneDelegate.swift */; };
@@ -32,6 +33,9 @@
 		7FBE063F2F50469100CE6906 /* PhotoListInputRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBE063E2F50469100CE6906 /* PhotoListInputRequest.swift */; };
 		7FBE06442F50513300CE6906 /* PhotoListTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBE06422F50513300CE6906 /* PhotoListTVCell.swift */; };
 		7FBE06452F50513300CE6906 /* PhotoListTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FBE06432F50513300CE6906 /* PhotoListTVCell.xib */; };
+		7FCB06EF2F5079A900EDD630 /* PhotoListDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FCB06EE2F5079A900EDD630 /* PhotoListDetailVC.xib */; };
+		7FCB06F02F5079A900EDD630 /* PhotoListDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCB06ED2F5079A900EDD630 /* PhotoListDetailVC.swift */; };
+		7FCB06F22F5079C300EDD630 /* PhotoListDetailViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCB06F12F5079C300EDD630 /* PhotoListDetailViewModal.swift */; };
 		7FE27B6F2F505AE30078CD3E /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 7FE27B6E2F505AE30078CD3E /* SDWebImage */; };
 		7FE27B712F505AE30078CD3E /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7FE27B702F505AE30078CD3E /* SDWebImageMapKit */; };
 		7FE27B752F506BB90078CD3E /* KRProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 7FE27B742F506BB90078CD3E /* KRProgressHUD */; };
@@ -39,6 +43,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7FBD212B2F51615C00BF7141 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		7FBE05CD2F501BC200CE6906 /* PhotoVault.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoVault.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FBE05E82F501CEE00CE6906 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FBE05E92F501CEE00CE6906 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -66,6 +71,9 @@
 		7FBE063E2F50469100CE6906 /* PhotoListInputRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListInputRequest.swift; sourceTree = "<group>"; };
 		7FBE06422F50513300CE6906 /* PhotoListTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListTVCell.swift; sourceTree = "<group>"; };
 		7FBE06432F50513300CE6906 /* PhotoListTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoListTVCell.xib; sourceTree = "<group>"; };
+		7FCB06ED2F5079A900EDD630 /* PhotoListDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListDetailVC.swift; sourceTree = "<group>"; };
+		7FCB06EE2F5079A900EDD630 /* PhotoListDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoListDetailVC.xib; sourceTree = "<group>"; };
+		7FCB06F12F5079C300EDD630 /* PhotoListDetailViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListDetailViewModal.swift; sourceTree = "<group>"; };
 		7FE27B762F506D460078CD3E /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -145,6 +153,7 @@
 				7FBE06142F5026F600CE6906 /* ApiConfig.swift */,
 				7FBE06212F502A7D00CE6906 /* LogToFile.swift */,
 				7FE27B762F506D460078CD3E /* ActivityIndicator.swift */,
+				7FBD212B2F51615C00BF7141 /* Extension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -205,9 +214,36 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		7FCB06EC2F50796F00EDD630 /* PhotoListDetail */ = {
+			isa = PBXGroup;
+			children = (
+				7FCB06F32F5079D900EDD630 /* View */,
+				7FCB06F42F5079E500EDD630 /* ViewModal */,
+			);
+			path = PhotoListDetail;
+			sourceTree = "<group>";
+		};
+		7FCB06F32F5079D900EDD630 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7FCB06ED2F5079A900EDD630 /* PhotoListDetailVC.swift */,
+				7FCB06EE2F5079A900EDD630 /* PhotoListDetailVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7FCB06F42F5079E500EDD630 /* ViewModal */ = {
+			isa = PBXGroup;
+			children = (
+				7FCB06F12F5079C300EDD630 /* PhotoListDetailViewModal.swift */,
+			);
+			path = ViewModal;
+			sourceTree = "<group>";
+		};
 		7FE27B722F5060990078CD3E /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				7FCB06EC2F50796F00EDD630 /* PhotoListDetail */,
 				7FBE05FE2F501E8500CE6906 /* PhotoList */,
 			);
 			path = Module;
@@ -281,6 +317,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FCB06EF2F5079A900EDD630 /* PhotoListDetailVC.xib in Resources */,
 				7FBE06452F50513300CE6906 /* PhotoListTVCell.xib in Resources */,
 				7FBE05F82F501CEE00CE6906 /* Assets.xcassets in Resources */,
 				7FBE05FA2F501CEE00CE6906 /* LaunchScreen.storyboard in Resources */,
@@ -302,6 +339,7 @@
 				7FBE06372F50445900CE6906 /* PhotoListViewModel.swift in Sources */,
 				7FBE06352F50347400CE6906 /* CoreDataHelper.swift in Sources */,
 				7FBE063F2F50469100CE6906 /* PhotoListInputRequest.swift in Sources */,
+				7FCB06F02F5079A900EDD630 /* PhotoListDetailVC.swift in Sources */,
 				7FBE062A2F502B5700CE6906 /* Request.swift in Sources */,
 				7FBE062B2F502B5700CE6906 /* NetworkService.swift in Sources */,
 				7FBE062C2F502B5700CE6906 /* HTTPMethod.swift in Sources */,
@@ -311,11 +349,13 @@
 				7FBE05F52F501CEE00CE6906 /* PhotoVault.xcdatamodeld in Sources */,
 				7FBE06442F50513300CE6906 /* PhotoListTVCell.swift in Sources */,
 				7FBE06222F502A7D00CE6906 /* LogToFile.swift in Sources */,
+				7FBD212C2F51615C00BF7141 /* Extension.swift in Sources */,
 				7FBE06322F5033A300CE6906 /* Photo+CoreDataClass.swift in Sources */,
 				7FBE06332F5033A300CE6906 /* Photo+CoreDataProperties.swift in Sources */,
 				7FBE05F62F501CEE00CE6906 /* SceneDelegate.swift in Sources */,
 				7FBE063A2F50461100CE6906 /* PhotoListOutputResponse.swift in Sources */,
 				7FBE05F72F501CEE00CE6906 /* ViewController.swift in Sources */,
+				7FCB06F22F5079C300EDD630 /* PhotoListDetailViewModal.swift in Sources */,
 				7FBE06012F501EC300CE6906 /* PhotoListVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,6 +396,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -387,6 +428,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

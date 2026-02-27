@@ -27,6 +27,7 @@ Method: GET
 Total Records: 5000
 
 Each photo includes:
+    
     {
         "albumId": 1,
         "id": 1,
@@ -42,16 +43,16 @@ PhotoVault follows the MVVM pattern with clear separation of concerns.
 
 Project Structure
 
-Network Layer
-    NetworkServiceProtocol
-    NetworkService
-    Request
-    HTTPMethod
-    NetworkError
-Module
-    PhotoListDetail
-        View
-        ViewModal
+    Network Layer
+        NetworkServiceProtocol
+        NetworkService
+        Request
+        HTTPMethod
+        NetworkError
+    Module
+        PhotoListDetail
+            View
+            ViewModal
     PhotoList
         Model
         Network
@@ -77,9 +78,6 @@ CoreData
         In-memory caching
         Placeholder image support
         Graceful handling of DNS failures for image host
-    
-    Note: The image URLs provided by the API use the host via.placeholder.com, which is currently not resolving (DNS failure) in certain regions/networks. This is an external service issue and not related to the app’s networking implementation. Image loading failures are handled gracefully using SDWebImage with fallback placeholder images to ensure a stable user experience.
-
     Core Data
         Saves API data locally
         Loads from Core Data on subsequent launches
@@ -105,8 +103,8 @@ CoreData
     Minimal main-thread blocking
     Efficient Core Data operations
 
-
 🛠 Setup Instructions
+
     1. Clone the repository
     2. Open in the latest version of Xcode
     3. Ensure deployment target is iOS 15+
@@ -114,8 +112,8 @@ CoreData
     5. No additional configuration required.
     
 📦 Dependencies
-
-The following third-party libraries are used:
+    
+    The following third-party libraries are used:
 
     • SDWebImage
         Used for:
